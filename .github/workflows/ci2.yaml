@@ -8,6 +8,15 @@ jobs:
   first-job:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
+    container: node:16
     steps:
       - run: node --version
+        name: check node version
       - run: npm --version
+        name: check npm version
+      - run: actions/checkout@3
+        name: checkout code from github
+      - run: npm install
+        name: npm install
+      - run: node app.js
+        name: run node application
