@@ -18,5 +18,5 @@ jobs:
         name: checkout code from github
       - run: npm install
         name: npm install
-      - run: node test.js
+      - run: node app.js
         name: run node application
