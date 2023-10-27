@@ -10,7 +10,7 @@ app.use(formidable());
 var mongodb = require("mongodb");
 var mongoClient = mongodb.MongoClient;
 
-let mongoUrl = `mongodb+srv://<user>:<pass>@ibstorm-mongo-cluster.ajegtoj.mongodb.net/`
+let mongoUrl = `mongodb+srv://ibstorm:RIUrRghoqxbbnHZ4@ibstorm-mongo-cluster.ajegtoj.mongodb.net/`
 // pass these options to mongo client connect request to avoid DeprecationWarning for current Server Discovery and Monitoring engine
 let mongoClientOptions = { useNewUrlParser: true, useUnifiedTopology: true };
 
